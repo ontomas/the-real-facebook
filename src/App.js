@@ -117,7 +117,7 @@ const App = () => {
                 Stop chasing after others. Take care of yourself.
               </p>
             </div>
-            <Webcam />
+            <Webcam className="w-full" />
             <div className="px-4 py-3 flex justify-between">
               <div className="h-5 w-32 bg-gray-200 rounded" />
               <div className="h-5 w-20 bg-gray-200 rounded" />
