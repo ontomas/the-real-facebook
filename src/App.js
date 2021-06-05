@@ -20,7 +20,7 @@ const App = () => {
         <h1 className="text-2xl text-blue-500 py-2 font-bold">
           The Real Facebook
         </h1>
-        <div className="flex">
+        <div className="hidden lg:flex">
           <FaHome
             size={38}
             className="text-blue-500 pb-2"
@@ -66,36 +66,38 @@ const App = () => {
           <div className="flex items-center">
             <FaUserCircle size={32} />
             <p className="text-gray-600 font-bold ml-2">You</p>
-            <div
-              className="bg-gray-200 rounded-full ml-5 text-center flex items-center justify-center"
-              style={{ width: 40, height: 40 }}
-            >
-              <FaPlus size={22} />
-            </div>
-            <div
-              className="bg-gray-200 rounded-full ml-2 text-center flex items-center justify-center"
-              style={{ width: 40, height: 40 }}
-            >
-              <FaFacebookMessenger size={22} />
-            </div>
-            <div
-              className="bg-gray-200 rounded-full ml-2 text-center flex items-center justify-center"
-              style={{ width: 40, height: 40 }}
-            >
-              <FaBell size={22} />
-            </div>
-            <div
-              className="bg-gray-200 rounded-full ml-2 text-center flex items-center justify-center"
-              style={{ width: 40, height: 40 }}
-            >
-              <FaCaretDown size={22} />
+            <div className="hidden md:flex">
+              <div
+                className="bg-gray-200 rounded-full ml-5 text-center flex items-center justify-center"
+                style={{ width: 40, height: 40 }}
+              >
+                <FaPlus size={22} />
+              </div>
+              <div
+                className="bg-gray-200 rounded-full ml-2 text-center flex items-center justify-center"
+                style={{ width: 40, height: 40 }}
+              >
+                <FaFacebookMessenger size={22} />
+              </div>
+              <div
+                className="bg-gray-200 rounded-full ml-2 text-center flex items-center justify-center"
+                style={{ width: 40, height: 40 }}
+              >
+                <FaBell size={22} />
+              </div>
+              <div
+                className="bg-gray-200 rounded-full ml-2 text-center flex items-center justify-center"
+                style={{ width: 40, height: 40 }}
+              >
+                <FaCaretDown size={22} />
+              </div>
             </div>
           </div>
         </div>
       </header>
       <main className="px-4 grid grid-cols-8 gap-4 py-5">
-        <div className="col-span-2 h-100 bg-gray-200 rounded shadow" />
-        <div className="col-span-4">
+        <div className="col-span-2 h-100 bg-gray-200 rounded shadow hidden md:block" />
+        <div className="col-span-8 md:col-span-4">
           <div className="flex">
             <div className="mr-3 bg-gray-200 h-36 w-1/5 rounded shadow" />
             <div className="mr-3 bg-gray-200 h-36 w-1/5 rounded shadow" />
@@ -124,7 +126,7 @@ const App = () => {
             </div>
           </div>
         </div>
-        <div className="col-span-2 h-100 bg-gray-200 rounded shadow" />
+        <div className="col-span-2 h-100 bg-gray-200 rounded shadow hidden md:block" />
       </main>
     </div>
   );
